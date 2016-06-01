@@ -10,6 +10,7 @@ public class Info implements Serializable {
     private String to;
     private  String from;
     private String info;
+    private int type;// 0表示登陆，1表示发送消息
 
     public String getTo() {
         return to;
@@ -33,6 +34,14 @@ public class Info implements Serializable {
 
     public void setInfo(String info) {
         this.info = info;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 
     @Override

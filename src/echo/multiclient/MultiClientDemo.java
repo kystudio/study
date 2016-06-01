@@ -15,20 +15,18 @@ public class MultiClientDemo {
             Socket socket = new Socket(host, 9090);
             System.out.println("连接成功！");
 
-            OutputStream out = socket.getOutputStream();
-            InputStream in = socket.getInputStream();
-            PrintStream ps = new PrintStream(out);
-            BufferedReader br = new BufferedReader(new InputStreamReader(in));
+            PrintStream out = new PrintStream(socket.getOutputStream());
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             Scanner input = new Scanner(System.in);
             boolean flag = true;
             while (flag) {
                 System.out.println("请输入：");
-                String info = input.next();
+                String info = input.nextLine();
                 if ("bye".equals(info)) {
                     flag = false;
                 }
-                ps.println(info);
-                info = br.readLine();
+                out.println(info);
+                info = in.readLine();
                 System.out.println(info);
             }
             out.close();
