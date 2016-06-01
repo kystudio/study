@@ -1,4 +1,4 @@
-package echo;
+package echo.multiclient;
 
 import java.io.*;
 import java.net.ServerSocket;
