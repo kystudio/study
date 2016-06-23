@@ -12,6 +12,7 @@ import java.net.URL;
  */
 public class URLDemo {
     public static void main(String[] args) throws IOException {
+        // 下载一张图片
         URL url = new URL("http://image.tianjimedia.com/uploadImages/2012/233/38/H439I0N71ARI.jpg");
         HttpURLConnection conn = (HttpURLConnection)url.openConnection();
 
