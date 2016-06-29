@@ -14,6 +14,7 @@ abstract class Person {
     Person(String name, int age) {
         this.name = name;
         this.age = age;
+        System.out.println("带参数的Person的构造函数！");
     }
 
     void introduce() {
