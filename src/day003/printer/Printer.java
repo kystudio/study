@@ -6,7 +6,7 @@ package day003.printer;
 public interface Printer {
     public void open();
 
-    public void print();
+    public void print(String s);
 
     public void close();
 }

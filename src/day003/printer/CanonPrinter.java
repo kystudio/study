@@ -10,8 +10,9 @@ public class CanonPrinter implements Printer {
     }
 
     @Override
-    public void print() {
-        System.out.println("Canon print");
+    public void print(String s) {
+        System.out.println("Canon print---->" + s);
+        System.out.println("clean");
     }
 
     @Override

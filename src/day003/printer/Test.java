@@ -5,18 +5,12 @@ package day003.printer;
  */
 public class Test {
     public static void main(String[] args) {
-        Printer printer = null;
+        int flag = 0;
 
-        int flag = 1;
-
-        if (flag == 0) {
-            printer = new CanonPrinter();
-        } else if (flag == 1) {
-            printer = new HPPrinter();
-        }
+        Printer printer = PrinterFactory.getPrinter(flag);
 
         printer.open();
-        printer.print();
+        printer.print("test");
         printer.close();
     }
 }

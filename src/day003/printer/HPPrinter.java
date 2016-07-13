@@ -10,12 +10,12 @@ public class HPPrinter implements Printer {
     }
 
     @Override
-    public void print() {
-        System.out.println("HP open");
+    public void print(String s) {
+        System.out.println("HP print---->" + s);
     }
 
     @Override
     public void close() {
-        System.out.println("HP open");
+        System.out.println("HP close");
     }
 }
