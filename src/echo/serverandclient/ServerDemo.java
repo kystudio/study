@@ -19,7 +19,7 @@ public class ServerDemo {
         Vector<ClientThread> list = new Vector<ClientThread>();
 
         try {
-            // 商品范围：1024-65535
+            // 端口范围：1024-65535
             ServerSocket ss = new ServerSocket(9091);
             System.out.println("服务器已启动，正在等待连接。。。");
 

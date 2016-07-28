@@ -8,7 +8,7 @@ import java.io.Serializable;
  */
 public class Info implements Serializable {
     private String to;
-    private  String from;
+    private String from;
     private String info;
     private int type;// 0表示登陆，1表示发送消息
 

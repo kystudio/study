@@ -1,4 +1,4 @@
-package day04.urlconnection;
+package day004.urlconnection;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;

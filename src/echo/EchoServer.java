@@ -10,7 +10,7 @@ import java.net.Socket;
 public class EchoServer {
     public static void main(String[] args) {
         try {
-            // 商品范围：1024-65535
+            // 端口范围：1024-65535
             ServerSocket ss = new ServerSocket(8989);
             System.out.println("服务器已启动，正在等待连接。。。");
             // 等待客户端连接，该方法会阻塞。

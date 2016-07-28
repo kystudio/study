@@ -44,8 +44,7 @@ public class ClientDemo {
             in.close();
         } catch (IOException e) {
             e.printStackTrace();
-        }catch (ClassNotFoundException e)
-        {
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
@@ -53,19 +52,20 @@ public class ClientDemo {
     /**
      * 接收消息的线程
      */
-    static class ReadInfoThread implements Runnable{
-        private  ObjectInputStream in;
+    static class ReadInfoThread implements Runnable {
+        private ObjectInputStream in;
         public boolean flag = true;
-        public ReadInfoThread(ObjectInputStream in){
-            this.in=in;
-            flag=true;
+
+        public ReadInfoThread(ObjectInputStream in) {
+            this.in = in;
+            flag = true;
         }
 
         @Override
         public void run() {
-            while (flag){
+            while (flag) {
                 try {
-                    Info info = (Info)in.readObject();
+                    Info info = (Info) in.readObject();
                     System.out.println(info);
                 } catch (IOException e) {
                     e.printStackTrace();

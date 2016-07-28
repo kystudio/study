@@ -1,6 +1,5 @@
-package day04.url;
+package day004.url;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
